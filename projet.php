@@ -24,4 +24,8 @@
         <a href="simplon-charleville/index.php"><img src="image/simplon.png" alt=""></a>
         <span class="projet-nom">Projet simplon charleville </span>
     </div>
+    <div class="simplon-tech" data-aos="fade-in" data-aos-duration="2000">
+        <a href="projetcnrs/card-actu.php"><img src="image/simplon.png" alt=""></a>
+        <span class="projet-nom">Projet simplon Cnrs </span>
+    </div>
 </div>
