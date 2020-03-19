@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.eot');
+    src: url('font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Montserrat-Regular.woff2') format('woff2'),
+        url('font/Montserrat-Regular.woff') format('woff'),
+        url('font/Montserrat-Regular.ttf') format('truetype'),
+        url('font/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Bold.eot');
+    src: url('font/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/Montserrat-Bold.woff2') format('woff2'),
+        url('font/Montserrat-Bold.woff') format('woff'),
+        url('font/Montserrat-Bold.ttf') format('truetype'),
+        url('font/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+body, html {
+    font-size: 16px;
+    color: rgb(0, 10, 1);
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+    background-color:rgb(109, 0, 0);
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px ;
+    z-index: 3;
+    
+}
+
+.topbar nav {
+    float: left;
+}
+
+.topbar nav a {
+    color: rgb(241, 247, 162);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 53px;
+}
+
+.topbar nav a:hover, .topbar nav a.active  {
+    color: black;
+}
+
+.social {
+    float: right;
+}
+.social a {
+    padding: 0 12px;
+    opacity: .5;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.banniere  {
+    height: 440px;
+    background: no-repeat center top / cover url(img/M20_Preloader_Av7E_0.jpg);
+}
+
+.body {
+    display: flex;
+}
+
+.main {
+    background: rgba(204, 199, 211, 0.315);
+    width: calc(100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: 2;
+}
+.sidebar{
+    position: relative;
+    width: 375px;
+    padding: 40px;
+    font-size: 17px;
+    z-index: 1;
+    color: white;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: white;
+    margin: 15px 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li{
+    padding: 6px 0;
+}
+
+.sidebar hr {
+    border:none;
+    background: #C4C4C4;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.article {
+    position: relative;
+    margin: 50px auto;
+    min-height: 230px;
+}
+.article-img {
+   vertical-align: top;
+    width: 25%;
+    margin-right:25px;
+}
+
+.article-img img {
+    width: 61%;
+    height: auto;
+}
+.article-date {
+    font-weight: 300px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.article-title {
+    font-size: 2,35rem;
+    line-height: 1.1;
+    font-family:"Cardo", "serif";
+    margin: 0 15px 0 0;
+    color: rgb(109, 0, 0);
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    clear: both;
+}
+
+blockquote {
+    background: rgba(0, 0, 0, .1);
+    padding: 10px;
+    position: relative;
+    
+}
+blockquote::before{
+    content: '"';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 60px;
+    line-height: 1.4rem;
+}
+blockquote::after{
+    content: '"';
+    position: absolute;
+    bottom: -26px;
+    right: 5px;
+    font-size: 60px;
+    line-height: 1.4rem;
+}
+
+.sidebar li a::after{
+    content: attr(data-count);
+    float: right;
+    background: black;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.article-img {
+    transition: transform .5s;
+    display: inline-block;
+}
+.article-img:hover {
+    transform: scale(1.1)rotate(10deg);
+}
+img.triforce{
+    width: 100%;
+    height: auto;
+}
+.lienCV {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 30px;
+        text-decoration: underline;
+        color: red;
+      }
+@keyframes engager{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.engagement{
+    animation-name: engager;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+.back{
+    display: inline-block;
+    ;
+    padding: 9px;
+    height: 100%;
+    width: 60%;
+}
+.main{
+    background:linear-gradient(100deg, red, white);;
+    background-size: cover;
+}
+
+
+
+ul{
+    animation: color-changea 30s infinite;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.267);
+}
+p{
+    animation: color-changeb 30s infinite;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+
+.topbar a{
+    background: url(img/bois-médiévale.jpg);
+    background-size: 100% 85px;
+    display: inline-block;
+    height: 85px;
+    line-height: 85px;
+}

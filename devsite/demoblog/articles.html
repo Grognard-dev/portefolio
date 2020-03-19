@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L'Antre de Rowan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="articles.html"class="active">Articles</a>
+            <a href="presentation.html">Présentation de l'Auteur</a>
+            <a href="CV.html">CV</a>
+        </nav>
+    </header>
+    <div class="banniere"></div>
+    <div class="body">
+    <main class="main">
+        <div class="container">
+                <article class="article">
+                        <a href="article.html" class="article-img"><img src="img/120.jpg" alt="Chandra"></a>
+                        <div class="back">
+                        <h2 class="article-title">Débuter dans Magic Arena<a href="article.html" ><span></span></a></h2>
+                        <p>Je ne parlerais que du mode Standard de Magic Arena, celui que je pratique.</p>
+                        <p>Au début de Magic Arena , il vous sera proposé de faire un tutoriel , faite le pour débloquer les premiers decks de chacune des couleurs </p>
+                            <br>
+                        <p>Ensuite, il faudra jouer contre l'IA pour gagner de l'expérience et débloquer des cartes et des decks préconstruits en double couleurs</p>
+                        <br>
+                        <p>Enfin il vous sera possible de jouer contre les autres joueurs , alors vous aurez des quêtes journalières et des pièces pour acheter des cosmétiques ou des boosters.</p>
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <a href="article.html" class="article-img"><img src="img/boros_challenger.png" alt="boros_challenger"></a>
+                    <div class="back">
+                    <h2 class="article-title">Les Jokers<a href="article.html" ><span></span></a></h2>
+                    <p>Parfois dans les boosters que vous achetez avec de l'or ou des gemmes (monnaie payante du jeu) , vous aurez des jokers.</p>
+                        <br>
+                    <p>les jokers sont des jetons pour créer des cartes dans le menu de création du deck, en appuyant sur fabriquer une carte.</p>
+                    <br>
+                    <p>Après avoir appuyé, vous aurez tout un panel de carte transparante , ceux-ci sont les cartes que vous ne posséder pas encore, chacune à un joker spécifique.</p>
+                    <br>
+                    <li>
+                        <ul>
+                            Les jokers communs / 33% de chance
+                        </ul>
+                        <ul>
+                            Les jokers inhabituels / 20% de chance
+                        </ul>
+                        <ul>
+                            Les jokers rares / 4% de chance
+                        </ul>
+                        <ul>
+                            Les jokers mythiques / 4% de chance
+                        </ul>
+                    </li>
+                    <p>un booster des modes draft où paquet Scellé ne peut en aucun cas contenir de joker.</p>
+                    <br>
+                    <p>Je vous conseille de ne pas créer sur un coup de tête, prenez le temps de regarder chacune des cartes dans la liste, et de la couleur que vous recherchez, afin de faire un deck et finalement utiliser vos jokers pour le façonné.</p>
+                </div>
+            </article>
+            <article class="article">
+                <a href="article.html" class="article-img"><img src="img/boros_reckoner.jpg" alt="Boros reckoner"></a>
+                <div class="back">
+                <h2 class="article-title">Faire son deck<a href="article.html" ><span></span></a></h2>
+                <p>Pour faire un deck , il existe differente méthode ,avec un papier et un stylo est noter son deck sur une feuille en regardant les cartes dans le créateur de carte vue plus tôt. </p>
+                    <br>
+                <p>Utiliser le créateur de carte, ajouter les cartes non posséder et posséder (les non posséder s'afficheront en rouge) et faire crée les cartes non posséder, si l'on a assez de joker.</p>
+                <br>
+                <p>Allez sur deckstats, pour prendre des decks existants ou alors utiliser le créateur de deck est demandé aux utilisateurs du site leur avis sur votre deck liste. Voici le lien du site :<a>deckstats.net</a></p>
+                <br>
+                <p> regarder des vidéos youtube, ou alors , allez en boutique spécialisés est voir avec le vendeur spécialisé en carte (souvent , il joue à Magic)</p>
+                </p>
+            </div>
+        </article>
+            </body>
+            </html>
+                <script>
+                        function entrer (entries, observer)
+                        {
+                            entries.forEach(entry => {
+                                console.log(entry) 
+                                if (entry.isIntersecting) {
+                                    entry.target.className = 'article engagement';
+                                }
+                          });
+                            
+                        }
+                        var options = {
+                            root: null,
+                            rootMargin: '0px',
+                            threshold: 0.1
+                          }
+                          
+                          var observer = new IntersectionObserver(entrer, options);
+                        
+                          document.querySelectorAll('article').forEach(function(element) {
+                            observer.observe(element);
+                          })
+                          
+                          
+                          </script>

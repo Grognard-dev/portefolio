@@ -1,0 +1,80 @@
+body{
+    background-color: darksalmon;
+}
+.un span{
+    background-color: rgb(255, 119, 0);
+    background-size:contain;
+    
+}
+
+.titre h1{
+    text-align: center;
+    line-height: 3;
+    background: linear-gradient(211deg, red, white);
+    
+    
+}
+.un .photo1 img {
+    float: left;
+    width:94%;
+}
+.un .photo2 img{
+    float: right;
+    width: 110%;
+}
+.deux{
+    display: flex;
+    height: 340px;
+
+}
+.deuxmoitier1 h1{
+    text-align: center;
+}
+.deuxmoitier1 {
+    background: linear-gradient(10deg,blue,white);
+}
+    
+
+.deuxmoitier2{
+    text-align: center;
+}
+.deuxmoitier2 {
+    background: linear-gradient(10deg,green,white);
+    
+}
+
+.parallax {
+    background-image: url("http://www.influencia.net/data/classes/actualite/actu_8657_image2012rectangle_petite.png") ;
+    width: 1337pxpx;
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+  }
+
+
+footer .copyright{
+    float: left;
+    background: linear-gradient(211deg, purple, white);
+}
+footer .mail{
+    float: right;
+    background: linear-gradient(211deg, pink, white);
+}
+.fichier img{
+    width: 100%;
+   
+}
+.fichier{
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    margin: 20px
+}
+
+.data-aos{
+    overflow: 1;
+
+}
