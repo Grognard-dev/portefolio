@@ -1,0 +1,111 @@
+.form-button {
+    background-color: rgb(43, 42, 42);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .form-button:hover {
+    background-color: rgb(66, 66, 66);
+  }
+  
+  .form-button:focus {
+    outline: none;
+  }
+  
+  .containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .slider-container{
+      width:100%;
+  }
+  
+  .partenaire-item {
+    height: 150px;
+    padding: 10px;
+  }
+  
+  .bas {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    padding: 3em;
+  }
+  
+  .form-control,
+  .text-area {
+    border-radius: 8px;
+  }
+  
+  .form-control:focus,
+  .text-area:focus {
+    outline: none;
+  }
+  
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-right: 3em;
+    color: black;
+    background-color: rgb(56, 56, 56);
+  }
+  
+  .contact {
+    display: flex;
+  
+  
+  }
+  
+  input {
+    color: black;
+  }
+  
+  
+  @keyframes mouvement-uniforme {
+    0% {
+      animation-timing-function: ease-in;
+      transform: translateX(-1500px) rotateY(0deg);
+    }
+  
+    100% {
+      animation-timing-function: ease-in;
+      transform: translateX(1500px) rotateY(0deg);
+    }
+  
+  }
+  
+  #bouge {
+    color: #3366cc;
+    font-size: 1.2em;
+    animation: mouvement-uniforme 8s infinite;
+    transform-origin: 0 0;
+  }
+  @media screen and (max-width: 768px) {
+    @keyframes mouvement-uniforme {
+        0% {
+          animation-timing-function: ease-in;
+          transform: translateX(0px) rotateY(0deg);
+        }
+      
+        100% {
+          animation-timing-function: ease-in;
+          transform: translateX(768px) rotateY(0deg);
+        }
+      
+      }
+      #bouge {
+        color: #3366cc;
+        font-size: 1.2em;
+        animation: mouvement-uniforme 12s infinite;
+        transform-origin: 0 0;
+  }

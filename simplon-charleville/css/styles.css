@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Champagne";
+  src: url('fonts/champagne.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  font-family: "champagne", arial, sans-serif;
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  border-bottom: 1px solid grey;
+  height: 75px;
+  width: 100%;
+  z-index: 2;
+
+}
+
+.container-around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: grey;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mb-3em {
+  margin-bottom: 3em;
+}
+
+.nav-button,
+.sub-button {
+  background-color: rgb(19, 18, 18);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nav-button:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.sub-button:hover {
+  background-color: rgb(31, 30, 30);
+}
+
+.nav-logo {
+  margin-right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgb(19, 18, 18);
+  border-radius: 8px;
+  padding: 4px;
+}
+.nav-logo:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+.headerdiv {
+  margin-top: 75px;
+  margin-right: 0px;
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+}
+
+.logodiv {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.toggle-button {
+  border: none;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.toggle-button:focus {
+  outline-width: 0;
+}
+
+
+.toggle-button:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+.container {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.prom-img {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.img-radius{
+  border-radius: 8px;
+}
+
+.form-title {
+  color: white;
+  margin-top: 3em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.form-text {
+  color: white;
+  text-align: justify;
+  font-size: 1.1em;
+  width: 60%;
+
+}
+
+@media (max-width: 360) {}
+
+
+
+/*truc volé*/
+
+.all_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 60px auto;
+  max-width: 968px;
+}
+
+.all_icon .top__icon {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.all_icon .top__icon .icon__container {
+  margin: auto;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid #fff;
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.all_icon .top__icon .icon__container .stroke {
+  position: absolute;
+  border: 3px solid #fff;
+  height: 84px;
+  width: 0;
+  -webkit-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  transform: rotate(-55deg);
+  left: 50%;
+  top: -5px;
+}
+
+.all_icon .top__icon .icon__container img {
+  margin: auto;
+  width: 60px;
+}
+
+.all_icon .top__icon figcaption {
+  white-space: wrap;
+  font-size: 0.9em;
+}
+
+.all_icon .top__icon figcaption h4 {
+  margin: 7px 0px 7px 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+
+  .all_icon {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .all_icon .top__icon {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .all_icon .top__icon .icon__container img {
+    width: 100%;
+  }
+
+  .all_icon .top__icon figcaption {
+    text-align: center;
+    width: 100%;
+  }
+}
